@@ -47,4 +47,18 @@ document.addEventListener('DOMContentLoaded', function() {
             closeIcon.style.display = 'none';
         }
     });
+
+    // Animate .wrapper when it enters the viewport
+    const wrapper = document.querySelector('.wrapper');
+    function revealWrapperOnScroll() {
+        if (!wrapper) return;
+        const rect = wrapper.getBoundingClientRect();
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        if (rect.top < windowHeight - 100) { // 100px before it fully enters
+            wrapper.classList.add('visible');
+            window.removeEventListener('scroll', revealWrapperOnScroll);
+        }
+    }
+    revealWrapperOnScroll();
+    window.addEventListener('scroll', revealWrapperOnScroll);
 });
