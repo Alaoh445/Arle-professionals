@@ -12,8 +12,10 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="manifest" href="site.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    </head>
-<body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+   </head>
+   <body>
     <!-- Header Section -->
     <header>
         <nav class="navbar">
@@ -174,5 +176,23 @@
         </div>
         <div class="client10"></div>
     </section>
+
+    <!--Contact Section-->
+    <section id="contact" class="contact">
+        <div class="contact-text">
+            <h1>CONTACT US</h1>
+            <h6>Get in Touch Today</h6>
+            <p>We'd love to hear from you! Whether you have questions,<br>
+                need assistance, or want to discuss how we can help your<br>
+                business thrive, our team is here for you.</p>
+        </div>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Full Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input id="phone" type="tel" name="phone" placeholder="Your Phone Number" required>
+            <div id="phone-error" style="color: red; font-size: 14px; display: none;">Invalid phone number</div>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
 </body>
 </html>

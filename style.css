@@ -471,6 +471,85 @@ header {
     background-color: white !important;
     color: rgb(82, 82, 38) !important;
 }
+.contact {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.contact-text {
+    margin-top: 10px;
+}
+.contact-text h1 {
+    font-size: 30px;
+    margin-top: 30px;
+}
+.contact-text h6 {
+    font-size: 15px;
+    font-weight: lighter;
+    margin-top: 30px;
+}
+.contact-text p {
+    font-size: 25px;
+    margin-top: 50px;
+}
+.contact-form {
+    padding-top: 50px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: none;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+        width: 30%;
+        box-sizing: border-box;
+}
+.contact-form input {
+    height: 50px;
+}
+.contact-form textarea {
+    height: 100px;
+}
+.contact-form button {
+    height: 50px;
+    background-color: rgb(82, 82, 38);
+        color: #ffffff;
+        border: none;
+        border-radius: 0px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease-in-out;
+    }
+    .contact-form button:hover {
+        background-color: #ffffff;
+        color: rgb(82, 82, 38);
+        outline: 1px solid rgb(82, 82, 38);
+    }
+    .iti {
+    width: 30%;
+}
+
+.iti input[type="tel"] {
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    padding-left: 52px !important; /* space for flag dropdown */
+    font-size: 1rem;
+}
+.contact-form input,
+.contact-form textarea {
+    padding-left: 15px;
+    padding-right: 12px;
+    box-sizing: border-box;
+}
+    
     
 
 /* Animation keyframes */
@@ -1095,6 +1174,96 @@ header {
         margin: 12px auto;
         display: block;
     }
+     .contact {
+        width: 100%;
+        max-width: 100vw;
+        box-sizing: border-box;
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        overflow-x: hidden;
+    }
+    .contact-text {
+        width: 100%;
+        max-width: 95vw;
+        margin: 0 auto 24px auto;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .contact-text h1,
+    .contact-text h6,
+    .contact-text p {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        word-break: break-word;
+    }
+    .contact-text h1 {
+        font-size: 25px;
+        margin-top: -30px;
+    }
+    .contact-text h6 {
+        font-size: 15px;
+        font-weight: normal;
+    }
+    .contact-text p br {
+        display: none;
+    }
+    .contact-text p {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    .contact-form {
+        width: 100%;
+        max-width: 400px;
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .contact-form input {
+        height: 50px;
+    }
+    .contact-form textarea {
+        height: 100px;
+        resize: none;
+    }
+    .contact-form button {
+        height: 50px;
+        background-color: rgb(82, 82, 38);
+        color: #ffffff;
+        border: none;
+        border-radius: 0px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease-in-out;
+    }
+    .contact-form button:hover {
+        background-color: #ffffff;
+        color: rgb(82, 82, 38);
+        outline: 1px solid rgb(82, 82, 38);
+    }
+     .iti {
+    width: 100%;
+    }
+     .iti input[type="tel"] {
+      width: 100%;
+      height: 50px;
+      box-sizing: border-box;
+      padding-left: 52px !important; /* space for flag dropdown */
+      font-size: 1rem;
+    }
 }
-
-
