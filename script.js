@@ -104,4 +104,31 @@ document.addEventListener('DOMContentLoaded', function() {
             input.focus();
         }
     });
+
+    // Back to Top button functionality
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+            backToTop.style.display = 'block';
+        } else {
+            backToTop.style.display = 'none';
+        }
+    });
+    backToTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Scroll-triggered reveal effect
+    const reveals = document.querySelectorAll('.reveal');
+    function revealOnScroll() {
+        const windowHeight = window.innerHeight;
+        reveals.forEach(section => {
+            const sectionTop = section.getBoundingClientRect().top;
+            if (sectionTop < windowHeight - 80) {
+                section.classList.add('visible');
+            }
+        });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
 });
