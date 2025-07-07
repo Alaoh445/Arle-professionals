@@ -1,4 +1,13 @@
 {
     "liveServer.settings.CustomBrowser": "chrome",
-    "liveServer.settings.port": 5503
+    "liveServer.settings.port": 5503,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        ".",
+        "-p",
+        "*test.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true
 }
